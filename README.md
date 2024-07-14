@@ -1,6 +1,7 @@
 # fg_coke
 Im new to coding, made a simple coke script for qbcore. here it is - hopefully it helps someone.
 
+# Preview
 
 
 # Dependencies
