@@ -1,19 +1,19 @@
 # fg-coke
-## Info
+# Info
 Im new to coding, made a simple coke script for qbcore. here it is - hopefully it helps someone
 
-## Install
-### Dependencies
-- https://github.com/overextended/ox_target/releases/tag/v1.16.0
-- https://github.com/overextended/ox_inventory/releases/tag/v2.40.2
-- https://github.com/overextended/ox_lib/releases/tag/v3.23.1
+
+# Dependencies
+- ![ox_target](https://github.com/overextended/ox_target/releases/tag/v1.16.0)
+- ![ox_inventory](https://github.com/overextended/ox_inventory/releases/tag/v2.40.2)
+- ![ox_lib](https://github.com/overextended/ox_lib/releases/tag/v3.23.1)
 
 I highly recommend installing the latest releases.
 
-### Images
+# Images
 In the folder "images"
 
-### Item 
+# Item 
 ox_inventory > data > items.lua
 ```lua
 	["coke_leaf"] = {
