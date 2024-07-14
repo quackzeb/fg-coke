@@ -1,9 +1,6 @@
 # fg_coke
 I'm new to coding, made a simple coke script for qbcore. here it is - hopefully it helps someone.
 
-# Preview
-
-
 # Dependencies
 - [ox_target](https://github.com/overextended/ox_target/releases/tag/v1.16.0)
 - [ox_inventory](https://github.com/overextended/ox_inventory/releases/tag/v2.40.2)
