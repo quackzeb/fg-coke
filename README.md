@@ -1,1 +1,30 @@
-# FG-COKE
+# fg-coke
+## Info
+Im new to coding, made a simple coke script for qbcore. here it is - hopefully it helps someone
+
+## Install
+### Dependencies
+- https://github.com/overextended/ox_target/releases/tag/v1.16.0
+- https://github.com/overextended/ox_inventory/releases/tag/v2.40.2
+- https://github.com/overextended/ox_lib/releases/tag/v3.23.1
+
+I highly recommend installing the latest releases.
+
+### Images
+In the folder "images"
+
+### Item 
+ox_inventory > data > items.lua
+```lua
+	["coke_leaf"] = {
+		label = "Coca leaves",
+		weight = 15,
+		stack = true,
+		close = false,
+		description = "Leaf from amazing plant",
+		client = {
+			image = "coca_leaf.png",
+		}
+	},
+```
+You should have that already in since you are using ox_inventory, but there it is if you dont.
