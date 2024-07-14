@@ -2,7 +2,7 @@ fx_version 'cerulean'
 game 'gta5'
 
 author 'froggy'
-description 'Simple Coke Script'
+description 'Simple Coke Script for qbcore'
 version '1.0.1'
 
 shared_script {
