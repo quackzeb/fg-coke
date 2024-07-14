@@ -9,7 +9,8 @@ I'm new to coding, made a simple coke script for qbcore. here it is - hopefully 
 I highly recommend installing the latest releases.
 
 # Images
-In the folder "images"
+ox_inventory > web > images
+- ![image](https://cdn.discordapp.com/attachments/1261505938477678634/1261917138285756476/coke_leaf.png?ex=6694b36b&is=669361eb&hm=5f51585966c7ec4c083c02a30b2911c4c692e4ceebad329d59b159b3c4b986cb&)
 
 # Item 
 ox_inventory > data > items.lua
