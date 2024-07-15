@@ -25,31 +25,38 @@ AddEventHandler("fg:farmCoke", function()
 				clip = "base",
 			},
 		})
-	then
+		then
 		TriggerServerEvent("fg:giveItem", Config.Coke.ItemFarm, Config.Coke.Amount, druginfo)
-		Repeat("fg:farmCoke")
 	else
 		lib.notify({
 			description = "Cancelled",
 			type = "error",
 		})
-    local druginfo = false
+		local druginfo = false
 	end
-
 end)
 
-ox_target:addBoxZone({
-	coords = vec3(-1977.06, 2.34, 122.5),
-	size = vec3(20,20,20),
-	rotation = 45,
-	options = {
-		{
-		name = 'farmCoke',
-		event = 'fg:farmCoke',
-		icon = "fa-solid fa-cannabis",
-		label = 'Farm...'
-		}
-	}
-})
-
-
+Citizen.CreateThread(function()
+	for _, loc in pairs(Config.CokePlantLoc) do
+		local model = Config.CokePlant
+	
+		RequestModel(model)
+		while not HasModelLoaded(model) do
+			RequestModel(model)
+			Wait(1)
+		end
+	
+		local coke = CreateObject(model, loc.x, loc.y, loc.z - 1.0, true, false, false)
+		FreezeEntityPosition(coke, true)
+		PlaceObjectOnGroundProperly(coke)
+	
+		ox_target:addLocalEntity(coke, {
+			{
+				name = 'farmCoke',
+				event = 'fg:farmCoke',
+				icon = 'fa-solid fa-cannabis',
+				label = 'Pick up ',
+			}
+		})			
+	end
+end)
